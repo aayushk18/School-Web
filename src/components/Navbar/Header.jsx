@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo_image from '../../assets/img/Logo.jpg'
 import { NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="lg:hidden p-2 rounded-md hover:bg-gray-100"
                         >
-                            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                            {mobileMenuOpen ? <Menu className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </button>
                     </div>
 
