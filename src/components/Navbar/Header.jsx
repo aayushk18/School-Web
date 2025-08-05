@@ -54,10 +54,10 @@ const Header = () => {
                     {mobileMenuOpen && (
                         <nav className="lg:hidden mt-4 pb-4 border-t pt-4">
                             <div className="flex flex-col space-y-3">
-                                <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                                <a href="#academics" className="text-gray-700 hover:text-blue-600 font-medium">Courses</a>
-                                <a href="#admissions" className="text-gray-700 hover:text-blue-600 font-medium">Corporate Training</a>
-                                <a href="#news" className="text-gray-700 hover:text-blue-600 font-medium">News & Updates</a>
+                                <NavLink onClick={() => setMobileMenuOpen(!setMobileMenuOpen)} to="" className="text-blue-900 hover:text-blue-600 font-semibold transition-colors">Home</NavLink>
+                                <NavLink onClick={() => setMobileMenuOpen(!setMobileMenuOpen)} to="Courses" className="text-blue-900 font-semibold hover:text-blue-600  transition-colors">Courses</NavLink>
+                                <NavLink onClick={() => setMobileMenuOpen(!setMobileMenuOpen)} to="CorporateTraining" className="text-blue-900 font-semibold hover:text-blue-600  transition-colors">Corporate Training</NavLink>
+                                <NavLink onClick={() => setMobileMenuOpen(!setMobileMenuOpen)} to="News&Updates" className="text-blue-900 font-semibold hover:text-blue-600  transition-colors">News & Updates</NavLink>
                                 <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium w-fit">
                                     Apply Now
                                 </button>
