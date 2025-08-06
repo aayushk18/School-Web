@@ -6,6 +6,9 @@ import AboutUs from './components/Pages/AboutUs'
 import Courses from './components/Navbar/Courses'
 import CooperateTrainingProgram from './components/Navbar/CooperateTrainingProgram'
 import News from './components/Navbar/News'
+import RegistrationForm from './components/Pages/RegistrationForm'
+import ImsLoginPage from './components/Pages/ImsLoginPage'
+import ApplyNow from './components/Pages/ApplyNow'
 
 const App = () => {
   return (
@@ -21,6 +24,10 @@ const App = () => {
           <Route path='Courses' element={<Courses />} />
           <Route path='CorporateTraining' element={<CooperateTrainingProgram />} />
           <Route path='News&Updates' element={<News />} />
+          <Route path='apply-now' element={<ApplyNow />}>
+            <Route path='registration-form' element={<RegistrationForm />} />
+
+          </Route>
 
 
 
