@@ -9,6 +9,8 @@ import News from './components/Navbar/News'
 import RegistrationForm from './components/Pages/RegistrationForm'
 import ImsLoginPage from './components/Pages/ImsLoginPage'
 import ApplyNow from './components/Pages/ApplyNow'
+import AdminPanel from './components/Panel/AdminPanel'
+import Layout from './components/Layout'
 
 const App = () => {
   return (
@@ -16,22 +18,23 @@ const App = () => {
 
       <Routes>
 
-
-        <Route path='' element={<SchoolWebsite />} >
-          <Route path='' element={<MainPage />} >
+        <Route path='' element={<Layout />} >
+          <Route path='' element={<SchoolWebsite />} >
+            <Route path='' element={<MainPage />} >
+            </Route>
+            <Route path='Aboutus' element={<AboutUs />} />
+            <Route path='Courses' element={<Courses />} />
+            <Route path='CorporateTraining' element={<CooperateTrainingProgram />} />
+            <Route path='News&Updates' element={<News />} />
+            <Route path='apply-now' element={<ApplyNow />}>
+              <Route path='registration-form' element={<RegistrationForm />} />
+            </Route>
           </Route>
-          <Route path='Aboutus' element={<AboutUs />} />
-          <Route path='Courses' element={<Courses />} />
-          <Route path='CorporateTraining' element={<CooperateTrainingProgram />} />
-          <Route path='News&Updates' element={<News />} />
-          <Route path='apply-now' element={<ApplyNow />}>
-            <Route path='registration-form' element={<RegistrationForm />} />
-
-          </Route>
-
-
-
         </Route>
+
+        <Route path='panel' element={<AdminPanel />} />
+
+
 
       </Routes>
 

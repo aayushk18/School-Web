@@ -63,7 +63,7 @@ const SchoolWebsite = () => {
                             <ul className="space-y-2 text-gray-400">
                                 <li><a href="#" className="hover:text-white transition-colors">Campus Facilities</a></li>
                                 <li><a href="#" className="hover:text-white transition-colors">Student Activities</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Sports & Recreation</a></li>
+                                <li><NavLink to="/panel" className="hover:text-white transition-colors">Website Panel</NavLink></li>
                                 <li><a href="#" className="hover:text-white transition-colors">Library</a></li>
                                 <li><a href="#" className="hover:text-white transition-colors">Cafeteria</a></li>
                             </ul>
